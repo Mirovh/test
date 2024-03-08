@@ -17,6 +17,7 @@ public:
 
 	std::vector<Book> getAllBooks() const;
 	std::vector<Book> getBooksByAuthor(const string& author) const;	
+	std::vector<Book> getBooksByYear(const int year) const;
 
 	void addBook(const Book& book);
 

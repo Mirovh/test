@@ -22,6 +22,18 @@ std::vector<Book> BookStore::getBooksByAuthor(const string& author) const {
 	return result;
 }
 
+std::vector<Book> BookStore::getBooksByYear(const int year) const {
+	std::vector<Book> result {};
+
+	for (auto book : collection) {
+		if (book.getPublicationYear() == year) {
+			result.emplace_back(book);
+		}
+	}
+
+	return result;
+}
+
 void BookStore::addBook(const Book& book) {
 	collection.emplace_back(book);
 }

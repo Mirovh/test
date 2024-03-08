@@ -35,6 +35,9 @@ const lest::test tests[] = {
 		EXPECT( bs.getBooksByAuthor("Author 3").size() == 1ul );
 
 		EXPECT( bs.getBooksByAuthor("Author 4").size() == 0ul );
+
+		EXPECT( bs.getBooksByYear(2019).size() == 0ul );
+		EXPECT( bs.getBooksByYear(2000).size() == 1ul );
 	}
 };
 
