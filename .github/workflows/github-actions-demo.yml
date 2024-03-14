@@ -13,4 +13,4 @@ jobs:
     - name: make
       run: make ./exercise4/
     - name: test
-      run: exercise4/test/main.cpp
+      run: cd exercise4/test/ && g++ -o my_program main.cpp && sudo chmod g+x my_program && sudo ./my_program
