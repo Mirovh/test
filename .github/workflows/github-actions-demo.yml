@@ -13,4 +13,4 @@ jobs:
     - name: make
       run: make ./exercise4/ && 
     - name: test
-      run: make ./exercise4/ test && sudo chmod g+x ./exercise4/test.out && ./exercise4/test.out
+      run: make test && sudo chmod g+x ./exercise4/test.out && ./exercise4/test.out
