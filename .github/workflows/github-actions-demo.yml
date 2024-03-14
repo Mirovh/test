@@ -10,7 +10,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make
-      run: make ./exercise4/ install
     - name: test
       run: make ./exercise4/ test && sudo chmod g+x ./exercise4/test.out && ./exercise4/test.out
